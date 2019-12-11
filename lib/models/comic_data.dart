@@ -1,3 +1,5 @@
+import 'package:meta/meta.dart';
+
 class ComicData {
   final String genre;
   final String description;
@@ -6,10 +8,10 @@ class ComicData {
   final String pages;
 
   ComicData({
-    this.genre,
-    this.description,
-    this.published,
-    this.updated,
-    this.pages,
+    @required this.genre,
+    @required this.description,
+    @required this.published,
+    @required this.updated,
+    @required this.pages,
   });
 }
