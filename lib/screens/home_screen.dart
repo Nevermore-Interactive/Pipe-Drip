@@ -25,9 +25,9 @@ class Homescreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
-                //const Image(
-                //image: AssetImage('assets/Title.png'),
-                //),
+                const Image(
+                  image: AssetImage('assets/placeholder.png'),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(top: 18.0),
                   child: const Text("Start",

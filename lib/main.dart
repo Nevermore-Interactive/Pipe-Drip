@@ -10,7 +10,7 @@ class PDApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pipe Drip',
-      theme: theme,
+      //theme: theme,
       home: Homescreen(),
     );
   }
