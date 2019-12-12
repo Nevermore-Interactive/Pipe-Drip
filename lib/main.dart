@@ -9,6 +9,7 @@ class PDApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Pipe Drip',
       //theme: theme,
       home: Homescreen(),

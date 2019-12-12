@@ -21,7 +21,7 @@ class Homescreen extends StatelessWidget {
         },
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.only(top: 150.0),
+            padding: const EdgeInsets.only(top: 300.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
@@ -30,13 +30,21 @@ class Homescreen extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 18.0),
-                  child: const Text("Start",
+                  child: const Text("Pipe Drip",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 36.0,
                         fontFamily: 'Sackers',
-                        //fontWeight: FontWeight.bold,
                       )),
+                ),
+                ButtonBar(
+                  children: <Widget>[
+                    Text(
+                      "Start",
+                      style:
+                          TextStyle(color: Colors.white, fontFamily: 'Sackers'),
+                    ),
+                  ],
                 ),
               ],
             ),
