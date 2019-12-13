@@ -37,15 +37,19 @@ class Homescreen extends StatelessWidget {
                         fontFamily: 'Sackers',
                       )),
                 ),
-                ButtonBar(
-                  children: <Widget>[
-                    Text(
+                RaisedButton(
+                    child: Text(
                       "Start",
-                      style:
-                          TextStyle(color: Colors.white, fontFamily: 'Sackers'),
+                      style: TextStyle(
+                        fontFamily: 'Sackers',
+                        color: Colors.white,
+                      ),
                     ),
-                  ],
-                ),
+                    onPressed: () {
+                      print("clicked");
+                    },
+                    //textTheme: ,
+                    color: Colors.grey),
               ],
             ),
           ),
