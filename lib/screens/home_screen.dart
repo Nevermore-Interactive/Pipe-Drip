@@ -45,9 +45,13 @@ class Homescreen extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    onPressed: () {
-                      print("clicked");
-                    },
+                    onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Menu(),
+                          ),
+                        ),
+
                     //textTheme: ,
                     color: Colors.grey),
               ],

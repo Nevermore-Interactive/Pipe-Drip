@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ThemeData theme = ThemeData(
   primaryColor: Color(0x2F2F2F),
   accentColor: Color(0xff8A8889),
-  backgroundColor: Colors.white,
+  backgroundColor: Colors.grey,
   fontFamily: 'Sackers',
   textTheme: TextTheme(
     title: TextStyle(
@@ -12,7 +12,7 @@ ThemeData theme = ThemeData(
     ),
     //Header
     headline: TextStyle(
-      fontFamily: 'Overpass',
+      fontFamily: 'Sackers',
       fontSize: 40.0,
       color: Colors.white,
       fontWeight: FontWeight.bold,
@@ -55,7 +55,6 @@ ThemeData theme = ThemeData(
       title: TextStyle(
         color: Colors.white,
         fontFamily: 'Sackers',
-        fontWeight: FontWeight.bold,
         fontSize: 30.0,
       ),
     ),
