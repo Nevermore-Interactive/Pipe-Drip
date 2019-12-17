@@ -8,34 +8,77 @@ class Catalogue extends StatelessWidget {
   Widget build(BuildContext context) {
     List<ComicData> items = [
       ComicData(
-          name: "1",
-          cover: ,
-          ),
-      ComicData(name: "2", cover: ,),
+        name: "1",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
       ComicData(
-          name: "3",
-          cover: "liIlW-ovx0Y",
-          ),
+        name: "2",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
       ComicData(
-          name: "4",
-          cover: "liIlW-ovx0Y",
-          ),
+        name: "3",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
       ComicData(
-          name: "5",
-          cover: "uio1J2PKzLI",
-          ),
+        name: "4",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
       ComicData(
-          name: "6",
-          cover: "cCI18qAoKq4",
-          ),
+        name: "5",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
       ComicData(
-          name: "7",
-          cover: "zrzMhU_4m-g",
-          ),
+        name: "6",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
       ComicData(
-          name: "8",
-          cover: "O0wOD9TWynM",
-          ),
+        name: "7",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
+      ComicData(
+        name: "8",
+        cover: "assets/placeholder_comic_image.jpg",
+        genre: "Unavailable",
+        description: "Unavailable",
+        published: "Unavailable",
+        updated: "Unavailable",
+        pages: "Unavailable",
+      ),
     ];
     return Scaffold(
       backgroundColor: Colors.grey,
@@ -51,14 +94,14 @@ class Catalogue extends StatelessWidget {
                 child: ListTile(
                     title: Text(
                       items[index].name,
-                      style: TextStyle(
-                          color: Colors.white, fontFamily: 'Sackers'),
+                      style:
+                          TextStyle(color: Colors.white, fontFamily: 'Sackers'),
                     ),
                     onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) {}
-                          ),
+                              builder: (context) =>
+                                  IndvComicScreen(items[index])),
                         )),
               ),
             );

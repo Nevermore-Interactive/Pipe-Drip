@@ -23,17 +23,29 @@ class Social extends StatelessWidget {
             child: Container(
               color: Colors.black,
               child: ListTile(
-                title: Text(
-                  "Twitter",
-                  style: TextStyle(color: Colors.white, fontFamily: 'Sackers'),
-                ),
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {},
+                  title: Text(
+                    "Twitter",
+                    style:
+                        TextStyle(color: Colors.white, fontFamily: 'Sackers'),
                   ),
-                ),
-              ),
+                  onTap: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text('ALERT'),
+                            titleTextStyle: TextStyle(
+                                fontFamily: 'Sackers', color: Colors.white),
+                            backgroundColor: Colors.grey,
+                            content: Text('Data Not Available'),
+                            contentTextStyle: TextStyle(
+                                fontFamily: 'Sackers',
+                                fontSize: 15.0,
+                                color: Colors.black),
+                            contentPadding: EdgeInsets.all(25.0),
+                          );
+                        });
+                  }),
             ),
           ),
           Padding(
@@ -41,17 +53,29 @@ class Social extends StatelessWidget {
             child: Container(
               color: Colors.black,
               child: ListTile(
-                title: Text(
-                  "Instagram",
-                  style: TextStyle(color: Colors.white, fontFamily: 'Sackers'),
-                ),
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {},
+                  title: Text(
+                    "Instagram",
+                    style:
+                        TextStyle(color: Colors.white, fontFamily: 'Sackers'),
                   ),
-                ),
-              ),
+                  onTap: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: Text('ALERT'),
+                            titleTextStyle: TextStyle(
+                                fontFamily: 'Sackers', color: Colors.white),
+                            backgroundColor: Colors.grey,
+                            content: Text('Data Not Available'),
+                            contentTextStyle: TextStyle(
+                                fontFamily: 'Sackers',
+                                fontSize: 15.0,
+                                color: Colors.black),
+                            contentPadding: EdgeInsets.all(25.0),
+                          );
+                        });
+                  }),
             ),
           ),
         ],

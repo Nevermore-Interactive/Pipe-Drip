@@ -12,10 +12,10 @@ class ComicData {
   ComicData({
     @required this.name,
     @required this.cover,
-    this.genre,
-    this.description,
-    this.published,
-    this.updated,
-    this.pages,
+    @required this.genre,
+    @required this.description,
+    @required this.published,
+    @required this.updated,
+    @required this.pages,
   });
 }

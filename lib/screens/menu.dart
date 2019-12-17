@@ -32,7 +32,7 @@ class Menu extends StatelessWidget {
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) {},
+                    builder: (context) => Catalogue(),
                   ),
                 ),
               ),
