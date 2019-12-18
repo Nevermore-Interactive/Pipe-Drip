@@ -8,11 +8,6 @@ AppBar buildAppBar(
   Color textColor,
 ) {
   return AppBar(
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(
-        bottom: Radius.circular(20),
-      ),
-    ),
     title: AutoSizeText(title,
         style: TextStyle(
           color: textColor,

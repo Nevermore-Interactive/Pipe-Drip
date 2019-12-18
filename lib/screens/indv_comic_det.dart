@@ -9,46 +9,62 @@ class IndvComicScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context, item.name, Colors.grey, Colors.black),
-      body: Column(
-        children: <Widget>[
-          Text(
-            'Name:' + item.name ?? "No item",
-            style: TextStyle(
-              fontFamily: 'Sackers',
-              fontSize: 16.0,
-            ),
+      backgroundColor: Colors.grey,
+      appBar: buildAppBar(context, item.name, Colors.black45, Colors.black),
+      body: Center(
+        child: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Column(
+            children: <Widget>[
+              Image(
+                image: AssetImage(item.cover),
+                width: 175.0,
+                height: 350.0,
+              ),
+              Text(
+                'Name:' + item.name ?? "No item",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Sackers',
+                  fontSize: 16.0,
+                ),
+              ),
+              Text(
+                'Description: ' + item.description ?? "No item",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Sackers',
+                  fontSize: 16.0,
+                ),
+              ),
+              Text(
+                'Genre: ' + item.genre ?? "No item",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Sackers',
+                  fontSize: 16.0,
+                ),
+              ),
+              Text(
+                'Published: ' + item.published ?? "No item",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Sackers',
+                  fontSize: 16.0,
+                ),
+              ),
+              Text(
+                'Updated: ' + item.updated ?? "No item",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Sackers',
+                  fontSize: 16.0,
+                ),
+              ),
+            ],
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           ),
-          Text(
-            'Description: ' + item.description ?? "No item",
-            style: TextStyle(
-              fontFamily: 'Sackers',
-              fontSize: 16.0,
-            ),
-          ),
-          Text(
-            'Genre: ' + item.genre ?? "No item",
-            style: TextStyle(
-              fontFamily: 'Sackers',
-              fontSize: 16.0,
-            ),
-          ),
-          Text(
-            'Published: ' + item.published ?? "No item",
-            style: TextStyle(
-              fontFamily: 'Sackers',
-              fontSize: 16.0,
-            ),
-          ),
-          Text(
-            'Updated: ' + item.updated ?? "No item",
-            style: TextStyle(
-              fontFamily: 'Sackers',
-              fontSize: 16.0,
-            ),
-          ),
-        ],
-        mainAxisAlignment: MainAxisAlignment.center,
+        ),
       ),
     );
   }

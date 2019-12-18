@@ -81,7 +81,7 @@ class Catalogue extends StatelessWidget {
       ),
     ];
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.black12,
       appBar: buildAppBar(context, 'Catalogue', Colors.grey, Colors.black),
       body: ListView.builder(
           padding: EdgeInsets.only(top: 10.0),
@@ -90,7 +90,7 @@ class Catalogue extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
               child: Container(
-                color: Colors.black,
+                color: Colors.black54,
                 child: ListTile(
                     title: Text(
                       items[index].name,

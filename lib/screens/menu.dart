@@ -11,11 +11,12 @@ class Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: buildAppBar(
         context,
         'Menu',
-        Colors.grey,
-        Colors.black,
+        Colors.white24,
+        Colors.white,
       ),
       body: ListView(
         padding: EdgeInsets.only(top: 10.0),
