@@ -9,11 +9,12 @@ class Social extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: buildAppBar(
         context,
         'Social',
-        Colors.grey,
-        Colors.black,
+        Colors.white24,
+        Colors.white,
       ),
       body: ListView(
         padding: EdgeInsets.only(top: 10.0),
@@ -21,12 +22,12 @@ class Social extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8.0),
             child: Container(
-              color: Colors.black,
+              color: Colors.white54,
               child: ListTile(
                   title: Text(
                     "Twitter",
                     style:
-                        TextStyle(color: Colors.white, fontFamily: 'Sackers'),
+                        TextStyle(color: Colors.black, fontFamily: 'Sackers'),
                   ),
                   onTap: () {
                     showDialog(
@@ -51,12 +52,12 @@ class Social extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8.0),
             child: Container(
-              color: Colors.black,
+              color: Colors.white54,
               child: ListTile(
                   title: Text(
                     "Instagram",
                     style:
-                        TextStyle(color: Colors.white, fontFamily: 'Sackers'),
+                        TextStyle(color: Colors.black, fontFamily: 'Sackers'),
                   ),
                   onTap: () {
                     showDialog(

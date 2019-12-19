@@ -9,10 +9,7 @@ AppBar buildAppBar(
 ) {
   return AppBar(
     title: AutoSizeText(title,
-        style: TextStyle(
-          color: textColor,
-        ),
-        maxLines: 1),
+        style: TextStyle(color: textColor, fontFamily: 'Sackers'), maxLines: 1),
     backgroundColor: color, //bar color
 
     iconTheme: IconThemeData(

@@ -24,11 +24,11 @@ class Menu extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8.0),
             child: Container(
-              color: Colors.black,
+              color: Colors.white54,
               child: ListTile(
                 title: Text(
                   "Comics",
-                  style: TextStyle(color: Colors.white, fontFamily: 'Sackers'),
+                  style: TextStyle(color: Colors.black, fontFamily: 'Sackers'),
                 ),
                 onTap: () => Navigator.push(
                   context,
@@ -42,11 +42,11 @@ class Menu extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8.0),
             child: Container(
-              color: Colors.black,
+              color: Colors.white54,
               child: ListTile(
                 title: Text(
                   "Social Media",
-                  style: TextStyle(color: Colors.white, fontFamily: 'Sackers'),
+                  style: TextStyle(color: Colors.black, fontFamily: 'Sackers'),
                 ),
                 onTap: () => Navigator.push(
                   context,

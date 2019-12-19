@@ -44,7 +44,7 @@ class Homescreen extends StatelessWidget {
                       ),
 
                   //textTheme: ,
-                  color: Colors.grey),
+                  color: Colors.white24),
             ],
           ),
         ),

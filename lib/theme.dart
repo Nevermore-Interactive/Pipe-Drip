@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ThemeData theme = ThemeData(
   primaryColor: Color(0x2F2F2F),
   accentColor: Color(0xff8A8889),
-  backgroundColor: Colors.grey,
+  backgroundColor: Colors.black,
   fontFamily: 'Sackers',
   textTheme: TextTheme(
     title: TextStyle(

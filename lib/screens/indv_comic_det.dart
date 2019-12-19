@@ -24,7 +24,7 @@ class IndvComicScreen extends StatelessWidget {
               Text(
                 'Name:' + item.name ?? "No item",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontFamily: 'Sackers',
                   fontSize: 16.0,
                 ),
@@ -32,7 +32,7 @@ class IndvComicScreen extends StatelessWidget {
               Text(
                 'Description: ' + item.description ?? "No item",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontFamily: 'Sackers',
                   fontSize: 16.0,
                 ),
@@ -40,7 +40,7 @@ class IndvComicScreen extends StatelessWidget {
               Text(
                 'Genre: ' + item.genre ?? "No item",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontFamily: 'Sackers',
                   fontSize: 16.0,
                 ),
@@ -48,7 +48,7 @@ class IndvComicScreen extends StatelessWidget {
               Text(
                 'Published: ' + item.published ?? "No item",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontFamily: 'Sackers',
                   fontSize: 16.0,
                 ),
@@ -56,7 +56,7 @@ class IndvComicScreen extends StatelessWidget {
               Text(
                 'Updated: ' + item.updated ?? "No item",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontFamily: 'Sackers',
                   fontSize: 16.0,
                 ),
